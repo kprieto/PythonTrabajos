@@ -1,0 +1,5 @@
+Nombre - Asignatura         - Calificación
+Juan   - Programación       - 90
+Martha - Ciencias naturales - 80
+Luisa  - Matemáticas        - 80
+Daniel - Geografía          - 70
