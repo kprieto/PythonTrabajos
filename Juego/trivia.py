@@ -75,7 +75,6 @@ def mostrar_puntuacion(nombre, respuestas_correctas):
     print(f"{nombre} tu puntuación final es: {respuestas_correctas}/{len(obtener_preguntas())}.\n")
 
     #Mensajes de despidida según su respuestas correctas
-
     if respuestas_correctas == len(obtener_preguntas()):
         print("¡Excelente! Has respondido correctamente todas las preguntas.")
     elif respuestas_correctas >= len(obtener_preguntas()) // 2:
