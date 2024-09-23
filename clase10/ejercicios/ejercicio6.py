@@ -23,7 +23,7 @@ class Biblioteca:
         Libro("La Odisea", "Homero", 543)
     ]
     
-
+    # Permite agregar un libro a la biblioteca
     def agregar_libro(self, titulo, autor, paginas):
         print("--- AGREGAR LIBRO ---")
         for libro in self._lista_libros:        
@@ -33,6 +33,7 @@ class Biblioteca:
         self._lista_libros.append(Libro(titulo.title(),autor.title(),paginas))
         return f"El libro {titulo.title()} fue registrado exitosamente."
     
+    # Permite buscar un libro por autor
     def buscar_por_autor(self, autor):
         print("--- BUSCAR POR AUTOR ---")
         print(f"AUTOR: {autor.title()}")
@@ -42,6 +43,7 @@ class Biblioteca:
                 libro_autor += f"Libro: {libro.titulo} - Páginas: {libro.paginas} \n"
         return libro_autor
     
+    #Permite mostrar la información de todos los libros de la biblioteca
     def mostrar_info_libros(self):
         print("--- MOSTRAR LIBROS ---")
         libros = ""

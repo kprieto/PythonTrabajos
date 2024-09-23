@@ -10,12 +10,14 @@ class CuentaBancaria:
         self.titular = titular
         self.saldo = saldo
     
+    #Permite hacer un deposito
     def depositar(self, monto):
         if monto > 0:
             self.saldo += monto
             return f"El deposito $ {monto} fue realizado exitosamente. Nuevo saldo: $ {self.saldo}"
         return "El monto deber ser mayor a 0 "
     
+    #Permite realizar un retiro
     def retirar(self, saldo_retirar):
         if saldo_retirar > self.saldo:
             raise ValueError (f"No puedes retirar el saldo de $ {saldo_retirar} de la cuenta, sobrepasa el Saldo Actual: $ {self.saldo}")
@@ -28,18 +30,21 @@ class Banco:
     def __init__(self):
         self.cuentas = []
 
+    #Permite crear una cuenta bancaria
     def crear_cuenta(self, titular, saldo_inicial=0):
         print("--- CREAR CUENTA ---")
         nueva_cuenta = CuentaBancaria(titular, saldo_inicial)
         self.cuentas.append(nueva_cuenta)
         return "Cuenta creada exitosamente."
 
+    #Permite buscar una cuenta bancaria por nombre
     def buscar_cuenta(self, titular):
         for cuenta in self.cuentas:
             if cuenta.titular == titular:
                 return cuenta
         return None
 
+    #Permite hacer el deposito a una cuenta bancaria
     def depositar_en_cuenta(self, titular, monto):
         cuenta = self.buscar_cuenta(titular)
         if cuenta:
@@ -47,6 +52,7 @@ class Banco:
         else:
             return "Cuenta no encontrada."
 
+    #Permite hacer el retiro a una cuenta bancaria
     def retirar_de_cuenta(self, titular, monto):
         cuenta = self.buscar_cuenta(titular)
         if cuenta:

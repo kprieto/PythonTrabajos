@@ -15,6 +15,7 @@ class Coche(Vehiculo):
         super().__init__(marca, modelo)
         self.ruedas = ruedas
     
+    #Permite mostrar la información del coche
     def mostrar_info(self):         
         return f"Marca: {self.marca} - Modelo: {self.modelo} - Ruedas: {self.ruedas}"
 
@@ -22,7 +23,8 @@ class Motocicleta(Vehiculo):
     def __init__(self, marca, modelo, ruedas):
         super().__init__(marca, modelo)
         self.ruedas = ruedas
-    
+        
+    #Permite mostrar la información de la motocicleta
     def mostrar_info(self):         
         return f"Marca: {self.marca} - Modelo: {self.modelo} - Ruedas: {self.ruedas}"
 

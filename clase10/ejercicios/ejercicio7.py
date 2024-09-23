@@ -33,6 +33,7 @@ class Rana(Animal):
     def hacer_sonido(self):
         return "Croac"
 
+#Permite mostrar el sonido que hace una animal, a partir de una lista de animales
 def hacer_sonido_animal():
     lista_animales = [
                     Perro(),
@@ -47,4 +48,5 @@ def hacer_sonido_animal():
         animales += f"{a.__class__.__name__}: {a.hacer_sonido()}\n"
     return animales
 
+#Permite mostrar el sonido que hace un animal
 print(hacer_sonido_animal())

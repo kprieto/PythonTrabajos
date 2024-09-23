@@ -11,10 +11,12 @@ class Estudiantes:
         self.edad = edad
         self.notas = notas
     
+    #Permite calcular el promedio de un estudiante
     def calcular_promedio(self):
         promedio = sum(self.notas) / len(self.notas)
         return promedio
     
+    #Permite determinar si un estudiante esta Aprobado o Reprobado
     def determinar_status_estudiante(self):
         return "Aprobado" if self.calcular_promedio() >= 6  else "Reprobado"
 
@@ -24,6 +26,7 @@ class Curso:
         Estudiantes("Ana",23,[5,5,5]),
         Estudiantes("Marcos",23,[7,8,9])]
     
+    #Permite mostrar la información de los estudiantes que aprobaron
     @classmethod
     def mostrar_info_estudiantes_aprobados(cls):
         datos = ""
@@ -32,5 +35,6 @@ class Curso:
                 datos += f"Estudiante {estudiante.nombre} - Edad {estudiante.edad} - Promedio {estudiante.calcular_promedio():.2f}\n"
         return datos
 
+#Muestra la informacion de un curso de un estudiante aprobado
 print(Curso.mostrar_info_estudiantes_aprobados()) 
         

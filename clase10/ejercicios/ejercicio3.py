@@ -17,6 +17,8 @@ class Hotel:
                         Habitacion(34,"Triple",2566.52,True),
                         Habitacion(50,"Suite principal",3856.65,True)
                         ]
+    
+    #Permite crear la reservación de una habitación
     @classmethod
     def reservar_habitacion(cls, numero_habitacion):
         print("--- Reservación ---")
@@ -29,6 +31,7 @@ class Hotel:
                     return f"La habitación {habitacion.numero} ya estaba ocupada."
         return f"La habitación {numero_habitacion} no existe en el hotel"
     
+    #Permite cancelar la reservación de una habitación
     @classmethod
     def cancelar_habitacion(cls, numero_habitacion):
         print("--- Cancelación ---")
@@ -41,6 +44,7 @@ class Hotel:
                     return f"La habitación {habitacion.numero} ya estaba disponible."
         return f"La habitación {numero_habitacion} no existe en el hotel"
 
+    #Permite mostrar las habitaciones que estan estado disponible
     @classmethod
     def mostrar_habitaciones_disponibles(cls):
         print("--- Habitaciones Disponibles ---")

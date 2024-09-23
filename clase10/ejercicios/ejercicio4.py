@@ -49,6 +49,7 @@ class Inventario:
                     Producto("Plátano",30.25,20),
                     Producto("Cerezas",100.25,25)]
     
+    #Permite agregar un producto 
     @classmethod
     def agregar_producto(cls, nombre, precio, cantidad):
         print("--- AGREGAR PRODUCTO ---")
@@ -59,6 +60,7 @@ class Inventario:
         cls.lista_productos.append(Producto(nombre.title(),precio,cantidad))
         return f"El producto {nombre.title()} fue registrado exitosamente."
     
+    #Permite mostrar todos los productos agregados
     @classmethod
     def mostrar_productos(cls):
         print("--- LISTA DE PRODUCTOS ---")
