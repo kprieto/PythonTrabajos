@@ -24,5 +24,5 @@ print(f"Tu edad es: {fechayedad.calcular_edad(fecha_nacimiento)} años.")
 num_aleatorio = random.randint(1,10)
 
 #Predecir la edad del usuario con el número aleatorio anterior
-edad = fechayedad.calcular_edad(fecha_nacimiento) + num_aleatorio
-print(f"En {num_aleatorio} años tendras la edad de {edad} años.")
+edad_futura = fechayedad.calcular_edad(fecha_nacimiento) + num_aleatorio
+print(f"En {num_aleatorio} años tendrás {edad_futura} años.")
