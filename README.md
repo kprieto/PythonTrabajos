@@ -1,7 +1,7 @@
-## Programación de Python <img src="https://brandslogos.com/wp-content/uploads/images/large/python-logo.png" alt="Python" width="50" height="50">
+## Introducción a Python <img src="https://brandslogos.com/wp-content/uploads/images/large/python-logo.png" alt="Python" width="50" height="50">
 
 > [!NOTE]
-> Código de ejemplos y ejercicios sobre temas:
+> Código de ejemplos sobre temas:
 
 1. Fundamentos de la programación
     1. Variables y Constantes
@@ -28,4 +28,7 @@
 11.  Manejo de excepciones y errores
 12.  POO
 
-
+> [!NOTE]
+> Ejercicios prácticos sobre los temas brindados anteriormente.
+> 
+> Curso impartido por ADA, Profesora: Bernardita
